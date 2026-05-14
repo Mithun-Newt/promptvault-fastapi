@@ -1,70 +1,133 @@
-# PromptVault
+# PromptVault – Full Stack AI Prompt Manager
 
-A modern AI Prompt Manager built using FastAPI, JWT Authentication, SQLAlchemy, and Vanilla JavaScript.
+PromptVault is a modern full-stack web application built using FastAPI that allows users to securely save, organize, search, and manage AI prompts.
+
+The application includes JWT authentication, secure password hashing, user-specific prompt storage, favorites system, and a responsive modern UI.
 
 ---
 
-## Features
+# Live Demo
+
+[Live Demo](https://promptvault-fastapi-1.onrender.com/)
+
+---
+
+# GitHub Repository
+
+[GitHub Repo](https://github.com/Mithun-Newt/promptvault-fastapi.git)
+
+---
+
+# Features
 
 - User Registration & Login
 - JWT Authentication
-- Secure Password Hashing
+- Secure Password Hashing using Argon2
 - User-specific Prompt Management
-- Create, Edit, Delete Prompts
+- Create / Edit / Delete Prompts
 - Favorite Prompts
-- Search & Filter Prompts
+- Search & Filter Functionality
 - Copy Prompt to Clipboard
-- Beautiful Modern UI
-- Fully Responsive Frontend
-- Protected Routes using JWT
+- Responsive Modern UI
+- Protected API Routes
+- Public Deployment using Render
 
 ---
 
-## Tech Stack
+# Tech Stack
 
-### Backend
+## Backend
+
 - FastAPI
 - SQLAlchemy
 - SQLite
 - JWT Authentication
 - Pydantic
 
-### Frontend
+## Frontend
+
 - HTML
 - CSS
 - Vanilla JavaScript
 
+## Deployment
+
+- Render
+
 ---
 
-## Screenshots
+# Screenshots
 
-## Screenshots
+## Authentication Page
 
-### Authentication Page
+![Authentication Page](screenshots/auth.png)
 
-![Auth Page](screenshots/auth.png)
+---
 
-
-### Dashboard
+## Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
 
 ---
 
-### Prompt Management
+## Prompt Management
 
-![Prompts](screenshots/WORKING.png)
+![Prompt Management](screenshots/WORKING.png)
 
 ---
 
-## Project Structure
+# Installation
+
+## Clone Repository
+
+```bash
+git clone YOUR_GITHUB_REPO_LINK
+```
+
+---
+
+## Navigate to Project Folder
+
+```bash
+cd promptvault-fastapi
+```
+
+---
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Run Server
+
+```bash
+uvicorn main:app --reload
+```
+
+---
+
+# API Documentation
+
+FastAPI Swagger Docs:
 
 ```text
-PromptVault/
+http://127.0.0.1:8000/docs
+```
+
+---
+
+# Project Structure
+
+```text
+promptvault-fastapi/
 │
 ├── routers/
-│   ├── prompts.py
-│   └── auth.py
+│   ├── auth.py
+│   └── prompts.py
 │
 ├── static/
 │   ├── style.css
@@ -73,73 +136,59 @@ PromptVault/
 ├── templates/
 │   └── home.html
 │
+├── screenshots/
+│   ├── auth-page.png
+│   ├── dashboard.png
+│   └── prompts.png
+│
 ├── database.py
 ├── models.py
 ├── schemas.py
 ├── security.py
-├── config.py
-├── main.py
+├── render.yaml
 ├── requirements.txt
+├── main.py
 └── README.md
 ```
 
 ---
 
-## Installation
-
-Clone repository:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/promptvault-fastapi.git
-```
-
-Move into folder:
-
-```bash
-cd promptvault-fastapi
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run server:
-
-```bash
-uvicorn main:app --reload
-```
-
-Open browser:
-
-```text
-http://127.0.0.1:8000
-```
-
----
-
-## Authentication Flow
+# Authentication Flow
 
 - User registers account
-- Password hashed using Argon2
+- Password hashed securely using Argon2
 - User logs in
 - JWT token generated
 - Token stored in browser localStorage
-- Protected APIs accessed using Bearer token
+- Protected routes accessed using Bearer token
 
 ---
 
-## Future Improvements
+# Deployment
 
-- Docker Deployment
+The application is publicly deployed using Render.
+
+Deployment included:
+- dependency management
+- Python 3.14 compatibility fixes
+- pydantic compatibility resolution
+- production server setup
+
+---
+
+# Future Improvements
+
+- PostgreSQL Integration
+- Docker Support
 - React Frontend
-- PostgreSQL Database
+- Redis Caching
 - AI Prompt Suggestions
-- Dark/Light Theme Toggle
+- Prompt Tags & Categories
+- Dark / Light Theme Toggle
+- OAuth Login
 
 ---
 
-## Author
+# Author
 
 Made by Mithun Venkatesan
