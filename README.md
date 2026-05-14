@@ -38,7 +38,22 @@ A modern AI Prompt Manager built using FastAPI, JWT Authentication, SQLAlchemy, 
 
 ## Screenshots
 
-(Add screenshots here later)
+## Screenshots
+
+### Authentication Page
+
+![Auth Page](screenshots/auth.png)
+
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+### Prompt Management
+
+![Prompts](screenshots/WORKING.png)
 
 ---
 
