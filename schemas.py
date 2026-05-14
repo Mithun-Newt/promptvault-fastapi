@@ -26,7 +26,7 @@ class PromptResponse(PromptBase):
 
     class Config:
 
-        orm_mode = True
+        from_attributes = True
 
 
 class PromptPatch(BaseModel):
@@ -56,7 +56,7 @@ class UserResponse(UserBase):
 
     class Config:
 
-        orm_mode = True
+        from_attributes = True
 
 class UserLogin(BaseModel):
 
