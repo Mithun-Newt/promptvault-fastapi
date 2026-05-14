@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>PromptVault</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+    <div id="auth-page">
+
+        <div class="auth-card">
+
+            <h1>PromptVault</h1>
+
+            <p class="creator-text">
+                Made by Mithun Venkatesan
+            </p>
+
+            <div id="auth-buttons">
+
+                <button onclick="showLoginForm()">
+                    Login
+                </button>
+
+                <button onclick="showRegisterForm()">
+                    Register
+                </button>
+
+            </div>
+
+
+            <div id="login-form" class="auth-form">
+
+                <h2>Login</h2>
+
+                <input
+                    type="text"
+                    id="login-username"
+                    placeholder="Username"
+                >
+
+                <input
+                    type="password"
+                    id="login-password"
+                    placeholder="Password"
+                >
+
+                <button onclick="loginUser()">
+                    Login
+                </button>
+
+            </div>
+
+
+            <div id="register-form" class="auth-form">
+
+                <h2>Register</h2>
+
+                <input
+                    type="text"
+                    id="register-username"
+                    placeholder="Username"
+                >
+
+                <input
+                    type="password"
+                    id="register-password"
+                    placeholder="Password"
+                >
+
+                <button onclick="registerUser()">
+                    Register
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="app-content">
+
+        <div class="top-bar">
+
+            <h1>PromptVault</h1>
+
+            <div>
+
+                <span id="current-user"></span>
+
+                <button onclick="logoutUser()">
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <hr>
+
+
+        <h2>Create Prompt</h2>
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Prompt title"
+        >
+
+        <br><br>
+
+        <textarea
+            id="content"
+            placeholder="Prompt content"
+        ></textarea>
+
+        <br><br>
+
+        <input
+            type="text"
+            id="category"
+            placeholder="Category"
+        >
+
+        <br><br>
+
+        <button onclick="createPrompt()">
+            Save Prompt
+        </button>
+
+
+        <hr>
+
+
+        <h2>Search & Filter</h2>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search prompts"
+        >
+
+        <br><br>
+
+        <button onclick="searchPrompts()">
+            Search
+        </button>
+
+        <button onclick="showFavorites()">
+            Favorites
+        </button>
+
+        <button onclick="showAllPrompts()">
+            Show All
+        </button>
+
+
+        <hr>
+
+
+        <div id="prompts-container"></div>
+
+    </div>
+
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>
